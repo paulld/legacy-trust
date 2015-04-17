@@ -20,9 +20,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     $locationProvider.html5Mode(true);
 }])
-  .directive('navBar', function() {
+  .directive('headNav', function() {
     return {
-      templateUrl: "<%= asset_path('nav_bar.html') %>",
-      controller: 'NavBarCtrl'
+      templateUrl: "<%= asset_path('head_nav.html') %>",
+      controller: 'HeadNavCtrl'
     };
-});;
+}).directive('footNav', function() {
+    return {
+      templateUrl: "<%= asset_path('foot_nav.html') %>",
+      controller: 'FootNavCtrl'
+    };
+});
