@@ -1,0 +1,28 @@
+'use strict';
+
+var app = angular.module('legacyTeam', ['ngRoute']);
+
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+  $routeProvider.
+    when('/', {
+      templateUrl: "<%= asset_path('home.html') %>",
+      controller: 'HomeCtrl'
+    }).
+
+    when('/contact', {
+      templateUrl: "<%= asset_path('contact.html') %>",
+      controller: 'ContactCtrl'
+    }).
+
+    otherwise({
+      redirectTo: '/'
+    });
+
+    $locationProvider.html5Mode(true);
+}])
+  .directive('navBar', function() {
+    return {
+      templateUrl: "<%= asset_path('nav_bar.html') %>",
+      controller: 'NavBarCtrl'
+    };
+});;
