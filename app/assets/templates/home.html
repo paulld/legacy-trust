@@ -1,5 +1,17 @@
 <head-nav></head-nav>
 
-<h1>{{welcome}}</h1>
+<div class="container">
+  <h1>Home</h1>
+
+  <p>{{welcome}}</p>
+
+  <ul>
+    <li ng-repeat="user in users">
+      {{user.first_name}} {{user.last_name}}
+    </li>
+  </ul>
+
+  <img src="assets/hong-kong.jpg">
+</div>
 
 <foot-nav></foot-nav>

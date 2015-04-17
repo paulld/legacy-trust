@@ -9,9 +9,29 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       controller: 'HomeCtrl'
     }).
 
-    when('/contact', {
-      templateUrl: "<%= asset_path('contact.html') %>",
-      controller: 'ContactCtrl'
+    when('/about-us', {
+      templateUrl: "<%= asset_path('about-us.html') %>",
+      controller: 'AboutUsCtrl'
+    }).
+
+    when('/resources', {
+      templateUrl: "<%= asset_path('resources.html') %>",
+      controller: 'ResourcesCtrl'
+    }).
+
+    when('/corporate-services', {
+      templateUrl: "<%= asset_path('corporate-services.html') %>",
+      controller: 'CorporateServicesCtrl'
+    }).
+
+    when('/specialized-services', {
+      templateUrl: "<%= asset_path('specialized-services.html') %>",
+      controller: 'SpecializedServicesCtrl'
+    }).
+
+    when('/contact-us', {
+      templateUrl: "<%= asset_path('contact-us.html') %>",
+      controller: 'ContactUsCtrl'
     }).
 
     otherwise({
