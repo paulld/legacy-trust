@@ -18,6 +18,7 @@ Stylesheets in ```/app/assets/stylesheets/```
 
 NB: after adding a new css file ```my-file```, you should add ```@import "my-file";``` at the end of ```application.css.scss```
 
+NB: use ```<img ng-src="<%= asset_path('my-image.jpg') %>"``` to add an image (stored in ```/app/assets/images/```)
 
 ### Push to Heroku
 
