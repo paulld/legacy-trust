@@ -21,12 +21,12 @@
   </header>
   -->
 
-  <section class="hero-slider" flexslider>
-    <ul class="slides">
+  <section class="hero-slider">
+    <ul class="slides" element-ready>
 
       <li class="overlay">
         <div class="background-image-holder parallax-background">
-          <img class="background-image" alt="Background Image" ng-src="<%= asset_path('background-image.jpg') %>">
+          <img class="background-image" alt="Background Image" ng-src="<%= asset_path('background-image.jpg') %>" image-on-load>
         </div>
         <div class="container align-vertical">
           <div class="row">
