@@ -9,24 +9,24 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       controller: 'HomeCtrl'
     }).
 
-    when('/about-us', {
-      templateUrl: "<%= asset_path('about-us.html') %>",
-      controller: 'AboutUsCtrl'
+    when('/about-legacy', {
+      templateUrl: "<%= asset_path('about.html') %>",
+      controller: 'AboutCtrl'
     }).
 
-    when('/resources', {
-      templateUrl: "<%= asset_path('resources.html') %>",
-      controller: 'ResourcesCtrl'
+    when('/personal-trusts', {
+      templateUrl: "<%= asset_path('personal-trusts.html') %>",
+      controller: 'PersonalTrustsCtrl'
     }).
 
-    when('/corporate-services', {
-      templateUrl: "<%= asset_path('corporate-services.html') %>",
-      controller: 'CorporateServicesCtrl'
+    when('/corporate-trustee', {
+      templateUrl: "<%= asset_path('corporate-trustee.html') %>",
+      controller: 'CorporateTrusteeCtrl'
     }).
 
-    when('/specialized-services', {
-      templateUrl: "<%= asset_path('specialized-services.html') %>",
-      controller: 'SpecializedServicesCtrl'
+    when('/specialised-services', {
+      templateUrl: "<%= asset_path('specialised-services.html') %>",
+      controller: 'SpecialisedServicesCtrl'
     }).
 
     when('/contact-us', {
