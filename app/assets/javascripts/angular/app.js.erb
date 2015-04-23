@@ -50,4 +50,14 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       templateUrl: "<%= asset_path('foot_nav.html') %>",
       controller: 'FootNavCtrl'
     };
+}).directive('flexslider', function () {
+
+  return {
+    link: function (scope, element, attrs) {
+
+      element.flexslider({
+        animation: "slide"
+      });
+    }
+  }
 });

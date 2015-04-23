@@ -10,12 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require flexslider.min
+ *= require line-icons.min
+ *= require elegant-icons.min
+ *= require bootstrap.min
+ *= require main
  *= require_self
  */
 
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "main";
+// @import "flexslider.min";
+// @import "line-icons.min";
+// @import "elegant-icons.min";
+// @import "bootstrap-sprockets";
+// @import "bootstrap.min";
+// @import "main";
 
 // NB: import each styleshheet page in appropriate order here, after bootstrap

@@ -1,17 +1,137 @@
 <head-nav></head-nav>
 
-<div class="container">
-  <h1>Home</h1>
+<div class="main-container">
+  <!--      
+  <header class="fullscreen-element no-pad centered-text">
+    <div class="background-image-holder parallax-background overlay">
+      <img class="background-image" alt="Background Image" src="workspace/img/bigstock-Retired-Elderly-Couple-Smiling-6361659.jpg">
+    </div>
+    
+    <div class="container align-vertical">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span class="text-white alt-font">Say Hello To Pivot</span>
+          <h1 class="text-white">Asia's Forward-Thinking Trust Company</h1>
+          <p class="lead text-white">Scale, experience and resources</p>
+          <a target="_blank" href="http://www.mediumra.re/pivot/variant/builder.html" class="btn btn-primary btn-white">Customize Pivot</a>
+          <a href="#" class="btn btn-primary btn-filled">Purchase Pivot</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  -->
 
-  <p>{{welcome}}</p>
+  <section class="hero-slider" flexslider>
+    <ul class="slides">
 
-  <ul>
-    <li ng-repeat="user in users">
-      {{user.first_name}} {{user.last_name}}
-    </li>
-  </ul>
+      <li class="overlay">
+        <div class="background-image-holder parallax-background">
+          <img class="background-image" alt="Background Image" ng-src="<%= asset_path('background-image.jpg') %>">
+        </div>
+        <div class="container align-vertical">
+          <div class="row">
+            <div class="col-md-6 col-sm-9">
+              <span class="text-white alt-font">Succession Planning</span>
+              <h1 class="text-white">Personal Attention from People You Come to Know and Trust</h1>
+              <p class="lead text-white">Our succession planning service is driven by one overriding objective: to simplify the complexities of your financial life through sound investment advice and responsible tax planning.</p>
+              <a target="_blank" href="#" class="btn btn-primary btn-white">More about succession planning ›</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="overlay">
+        <div class="background-image-holder parallax-background">
+          <img class="background-image" alt="Background Image" ng-src="<%= asset_path('shutterstock_116495923.jpg') %>">
+        </div>
+        <div class="container align-vertical">
+          <div class="row">
+            <div class="col-md-6 col-sm-9">
+              <span class="text-white alt-font">Personal Trusts</span>
+              <h1 class="text-white">A Personal Trust Can Be as Unique as You Are</h1>
+              <p class="lead text-white">A personal trust embodies your financial plan for the future and is as unique as you are. It is tailored specifically to your needs, your circumstances, your assets and, most importantly, designed to support your goals.</p>
+              <a target="_blank" href="#" class="btn btn-primary btn-white">More about personal trusts ›</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="overlay">
+        <div class="background-image-holder parallax-background">
+          <img class="background-image" alt="Background Image" ng-src="<%= asset_path('shutterstock_121708738.jpg') %>">
+        </div>
+        <div class="container align-vertical">
+          <div class="row">
+            <div class="col-md-6 col-sm-9">
+              <span class="text-white alt-font">Corporate Trustee</span>
+              <h1 class="text-white">Effective Trust Solutions to Safeguard Business Interests</h1>
+              <p class="lead text-white">Assigning a trustee to be responsible for managing company's assets and affairs can be the most important decision you can make. Legacy  offers the extensive knowledge and experience necessary to handle your trust.</p>
+              <a target="_blank" href="#" class="btn btn-primary btn-white">More about corporate trustee ›</a>
+            </div>
+          </div>
+        </div>
+      </li>     
+    </ul>
+  </section>
 
-  <img ng-src="<%= asset_path('hong-kong.jpg') %>"
+  <section class="duplicatable-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Beyond Trust Services</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="feature feature-icon-large">
+            <i class="icon icon-notebook"></i>
+            <h5>Managing Your Financial Affairs</h5>
+            <p>Trusts can help to ensure the prudent management of your finances during times when you cannot attend to your own affairs.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature feature-icon-large">
+            <i class="icon icon-strategy"></i>
+            <h5>Diversification Strategies</h5>
+            <p>Trusts can be used to help individuals with large concentrations of company stock diversify their assets, achieve liquidity, and reduce risk.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature feature-icon-large">
+            <i class="icon icon-tools"></i>
+            <h5>Reduction of Tax Liabilities</h5>
+            <p>You can take advantage of one or more of a variety of trust arrangements that can minimize costly estate, income, and gift taxes.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="feature feature-icon-large">
+            <i class="icon icon-documents"></i>
+            <h5>Continuity</h5>
+            <p>Trusts can be established to continue on after your death for the benefit of your spouse, children, or other named beneficiaries or charities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="action-banner overlay">
+    <div class="background-image-holder">
+      <img class="background-image" alt="Background Image" ng-src="<%= asset_path('shutterstock_166469249.jpg') %>">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+          <h1 class="text-white">Contact one of our skilled professionals to find the right trust product for you.
+          </h1>
+          <h2 class="text-white">Contact us at (+852) 2617-9177 </h2>
+          <a href="#" class="btn btn-primary btn-white">Get Started Online!</a>
+          <a href="#" class="btn btn-primary btn-white btn-filled">Request a callback</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <foot-nav></foot-nav>
