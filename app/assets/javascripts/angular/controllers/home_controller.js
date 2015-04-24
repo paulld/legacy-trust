@@ -11,7 +11,7 @@ app.controller('HomeCtrl', ['$scope', '$interval', 'Afterload', function($scope,
         // console.log('already done', x);
       }
       $('.slides li.overlay').each(function(){
-        console.log('hi');
+        // console.log('hi');
         $(this).css('height', $(window).height());
       });
     }, 100, 20);
