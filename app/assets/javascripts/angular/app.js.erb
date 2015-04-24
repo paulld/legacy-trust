@@ -177,17 +177,17 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       
       // Pad first section for overlay bar
       
-      if($('nav').hasClass('overlay-bar') || $('nav').hasClass('contained-bar') ){
-        var currentPad = parseInt($('.main-container').find(':first-child').css('padding-top'));
-        var newPad = currentPad + $('nav').outerHeight() - 48;
-        if(currentPad > 0){
-          $('.main-container').children(':first').css('padding-top', newPad);
-        }else if($('.main-container').find(':first').hasClass('hero-slider')){
-          var height = parseInt($('.hero-slider .slides li:first-child').outerHeight());
-          var newHeight = height + $('nav').outerHeight();
-          $('.hero-slider .slides li').css('height', newHeight);
-        }
-      }
+      // if($('nav').hasClass('overlay-bar') || $('nav').hasClass('contained-bar') ){
+      //   var currentPad = parseInt($('.main-container').find(':first-child').css('padding-top'));
+      //   var newPad = currentPad + $('nav').outerHeight() - 48;
+      //   if(currentPad > 0){
+      //     $('.main-container').children(':first').css('padding-top', newPad);
+      //   }else if($('.main-container').find(':first').hasClass('hero-slider')){
+      //     var height = parseInt($('.hero-slider .slides li:first-child').outerHeight());
+      //     var newHeight = height + $('nav').outerHeight();
+      //     $('.hero-slider .slides li').css('height', newHeight);
+      //   }
+      // }
       
       
       // Fullwidth Subnavs
