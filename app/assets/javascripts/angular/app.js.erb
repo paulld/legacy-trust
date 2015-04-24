@@ -82,7 +82,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     return function () {
 
       // Nav Sticky
-            
+
       $(window).scroll(function(){
         if($(window).scrollTop() > 500 && !$('.mobile-toggle').is(":visible")){
           $('.top-bar').addClass('nav-sticky');
@@ -130,11 +130,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       
       $('.inner-link').smoothScroll({offset: -96, speed: 800});
       
-      // Mobile Toggle
+      // Mobile Toggle       >>>> MOVED TO NAV BAR CTRL
       
-      $('.mobile-toggle').click(function(){
-        $('nav').toggleClass('open-nav');
-      });
+      // $('.mobile-toggle').click(function(){
+      //   $('nav').toggleClass('open-nav');
+      // });
+      // $('nav').removeClass('open-nav');
       
       // Fullscreen nav toggle
       

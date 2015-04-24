@@ -70,7 +70,7 @@
           <a ng-href="/"><img class="logo logo-dark" alt="Logo" ng-src="<%= asset_path('logo-dark.png') %>"></a>
         </div>
       
-        <div class="col-md-10 col-sm-9 columns">
+        <div class="col-md-10 col-sm-9 columns main-menu">
           <ul class="menu">
             <li class="has-dropdown"><a href="/about-legacy">About Legacy</a>
               <ul class="subnav">
@@ -147,8 +147,12 @@
         </div>
       </div>
       
-      <div class="mobile-toggle">
+      <!-- <div class="mobile-toggle">
         <i class="fa fa-menu"></i>
+      </div> -->
+
+      <div class="mobile-toggle" ng-click="openNav()">
+        <i class="icon icon_menu"></i>
       </div>
       
     </div>
