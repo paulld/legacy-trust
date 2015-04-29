@@ -1,4 +1,4 @@
-<header class="container">
+<!-- <header class="container">
   <nav class="main-menu">
     <ul class="list-inline">
       <li ng-class="isActive('/')">
@@ -22,3 +22,139 @@
     </ul>
   </nav>
 </header>
+ -->
+
+<div class="nav-container">
+  <nav class="top-bar overlay-bar">
+    <div class="container">
+    
+      <div class="row utility-menu">
+        <div class="col-sm-12">
+          <div class="utility-inner clearfix">
+            <span class="alt-font"><i class="fa fa-map-marker"></i> 20th Floor, World Wide House, Central, Hong Kong</span>
+            <span class="alt-font"><i class="fa fa-phone"></i> +852 2617-9177</span>
+          
+            <div class="pull-right">
+              <!-- <a href="login.html" class="btn btn-primary btn-white btn-xs">Client Login</a>
+              <a href="#" class="btn btn-primary btn-filled btn-xs">Open An Account</a>
+              <a href="#" class="language"><img alt="English" ng-src="<%= asset_path('flags/gb.png') %>"></a>
+              <a href="#" class="language"><img alt="English" ng-src="<%= asset_path('flags/hk.png') %>"></a> -->
+            <ul class="social-icons text-right">
+              <li>
+                <a href="#">
+                  <i class="icon social_twitter"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="#">
+                  <i class="icon social_facebook"></i>
+                </a>
+              </li>
+            
+              <li>
+                <a href="#">
+                  <i class="icon social_instagram"></i>
+                </a>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="row nav-menu">
+        <div class="col-md-2 col-sm-3 columns">
+          <a ng-href="/"><img class="logo logo-light" alt="Logo" ng-src="<%= asset_path('logo-light.png') %>"></a>
+          <a ng-href="/"><img class="logo logo-dark" alt="Logo" ng-src="<%= asset_path('logo-dark.png') %>"></a>
+        </div>
+      
+        <div class="col-md-10 col-sm-9 columns main-menu">
+          <ul class="menu">
+            <li class="has-dropdown"><a href="/about-legacy">About Legacy</a>
+              <ul class="subnav">
+                <li><a href="/about-legacy#">History</a></li>
+                <li><a href="/about-legacy#">Board of Trustees</a></li>
+                <li><a href="/about-legacy#">Fiduciary Duty</a></li>
+                <li><a href="/about-legacy#">Press Releases</a></li>
+                <li><a href="/about-legacy#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown"><a href="/personal-trusts">Personal Trusts</a>
+              <ul class="subnav">
+                <li><a href="/personal-trusts#">Succession Planning</a></li>
+                <li><a href="/personal-trusts#">International Pension Plans (IPP)</a></li>
+                <li><a href="/personal-trusts#">Executive Managememnt</a></li>
+                <li><a href="/personal-trusts#">Press Releases</a></li>
+                <li><a href="/personal-trusts#">FAQs</a></li>
+                <li><a href="/personal-trusts#">Glossary</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown"><a href="/corporate-trustee">Corporate Trustee</a>
+              <div class="subnav subnav-halfwidth">
+                <div class="col-md-6">
+                  <h6 class="alt-font">Capital Raisers</h6>
+                  <ul class="subnav">
+                    <li><a href="/corporate-trustee#">International Pension Plans (IPP)</a></li>
+                    <li><a href="/corporate-trustee#">Example</a></li>
+                    <li><a href="/corporate-trustee#">Example</a></li>
+                    <li><a href="/corporate-trustee#">Example</a></li>
+                  </ul> 
+                </div>
+                
+                <div class="col-md-6">
+                  <h6 class="alt-font">Professionals</h6>
+                  <ul class="subnav">
+                    <li><a href="/corporate-trustee">Example</a></li>
+                    <li><a href="/corporate-trustee">Example</a></li>
+                    <li><a href="/corporate-trustee">Example</a></li>
+                    <li><a href="/corporate-trustee">Example</a></li>
+                  </ul> 
+                </div>
+              </div>
+            </li>
+            <li class="has-dropdown"><a href="/specialised-services">Specialised Services</a>
+              <ul class="subnav">
+                <li><a href="/specialised-services#">Trust Administration</a></li>
+                <li><a href="/specialised-services#">Custody Services</a></li>
+                <li><a href="/specialised-services#">Trust Accounting</a></li>
+                <li><a href="/specialised-services#">Tax Review and Reporting</a></li>
+                <li><a href="/specialised-services#">Record Keeping Services</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <ul class="social-icons text-right">
+            <li>
+              <a href="#">
+                <i class="icon social_twitter"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#">
+                <i class="icon social_facebook"></i>
+              </a>
+            </li>
+          
+            <li>
+              <a href="#">
+                <i class="icon social_instagram"></i>
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      
+      <!-- <div class="mobile-toggle">
+        <i class="fa fa-menu"></i>
+      </div> -->
+
+      <div class="mobile-toggle" ng-click="openNav()">
+        <i class="icon icon_menu"></i>
+      </div>
+      
+    </div>
+  </nav>
+</div>

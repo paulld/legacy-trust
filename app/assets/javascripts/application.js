@@ -10,8 +10,20 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+//= require lib/modernizr-2.6.2-respond-1.1.0.min
+//= require lib/jquery.min
+//= require lib/jquery.plugin.min.js
+//= require lib/bootstrap.min
+//= require lib/jquery.flexslider-min
+//= require lib/smooth-scroll.min
+//= require lib/skrollr.min
+//= require lib/spectragram.min
+//= require lib/scrollReveal.min
+//= require lib/isotope.min
+//= require lib/twitterFetcher_v10_min
+//= require lib/lightbox.min
+//= require lib/jquery.countdown.min
+//= require lib/scripts
 //= require angular
 //= require angular-route
-//= require_tree .
+//= require_tree ./angular

@@ -1,16 +1,20 @@
-app.controller('HomeCtrl', ['$scope', function($scope){
-  
-  $scope.welcome = 'Hello World';
+app.controller('HomeCtrl', ['$scope', '$interval', 'Afterload', function($scope, $interval, Afterload){
 
-  $scope.users = [
-    {
-      first_name: 'Adrien',
-      last_name: 'lopez'
-    },
-    {
-      first_name: 'Paul',
-      last_name: 'LD'
-    }
-  ];
+  $scope.$watch('$viewContentLoaded', function() {
+    // var x = 0;
+    $interval(function(){
+      // x++;
+      if (!$('.main-container section:first-child').hasClass('first-child')) {
+        Afterload();
+        // console.log('DONE', x);
+      // } else {
+        // console.log('already done', x);
+      }
+      $('.slides li.overlay').each(function(){
+        // console.log('hi');
+        $(this).css('height', $(window).height());
+      });
+    }, 100, 20);
+  });
 
 }]);
