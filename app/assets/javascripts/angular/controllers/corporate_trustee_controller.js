@@ -1,3 +1,7 @@
-app.controller('CorporateTrusteeCtrl', ['$scope', function($scope){
+app.controller('CorporateTrusteeCtrl', ['$scope', 'Afterload', function($scope, Afterload){
+
+  $scope.$watch('$viewContentLoaded', function() {
+    Afterload();
+  });
 
 }]);
