@@ -23,7 +23,6 @@
 //= require lib/twitterFetcher_v10_min
 //= require lib/lightbox.min
 //= require lib/jquery.countdown.min
-//= require lib/scripts
 //= require angular
 //= require angular-route
 //= require_tree ./angular

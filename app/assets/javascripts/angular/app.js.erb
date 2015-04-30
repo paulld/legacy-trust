@@ -34,6 +34,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       controller: 'ContactUsCtrl'
     }).
 
+    when('/login', {
+      templateUrl: "<%= asset_path('login.html') %>",
+      controller: 'LoginCtrl'
+    }).
+
+    when('/legacy-connect', {
+      templateUrl: "<%= asset_path('admin.html') %>",
+      controller: 'AdminCtrl'
+    }).
+
     otherwise({
       redirectTo: '/'
     });
@@ -60,6 +70,26 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       }
     };
 }]).factory('Afterload', ['$window', function() {
+
+  return function () {
+
+    // Nav Sticky
+    $(window).scroll(function(){
+      if($(window).scrollTop() > 400 && !$('.mobile-toggle').is(":visible")){
+        $('.top-bar').addClass('nav-sticky');
+      }else{
+        $('.top-bar').removeClass('nav-sticky');
+      }
+    });
+
+    // Slider Initializations
+    $('.hero-slider').flexslider({});
+    $('.image-slider').flexslider({ animation: "slide"});
+    $('.testimonials-slider').flexslider({ directionNav: false });
+
+  };
+
+}]).factory('AfterloadOthers', ['$window', function() {
     // function alignVertical(){
     //   $('.align-vertical').each(function(){
     //     var that = $(this);
@@ -83,13 +113,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       // Nav Sticky
 
-      $(window).scroll(function(){
-        if($(window).scrollTop() > 500 && !$('.mobile-toggle').is(":visible")){
-          $('.top-bar').addClass('nav-sticky');
-        }else{
-          $('.top-bar').removeClass('nav-sticky');
-        }
-      });
+      // $(window).scroll(function(){
+      //   if($(window).scrollTop() > 500 && !$('.mobile-toggle').is(":visible")){
+      //     $('.top-bar').addClass('nav-sticky');
+      //   }else{
+      //     $('.top-bar').removeClass('nav-sticky');
+      //   }
+      // });
       
       // Offscreen Nav
       
@@ -228,9 +258,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
       // Slider Initializations
       
-      $('.hero-slider').flexslider({});
-      $('.image-slider').flexslider({ animation: "slide"});
-      $('.testimonials-slider').flexslider({ directionNav: false });
+      // $('.hero-slider').flexslider({});
+      // $('.image-slider').flexslider({ animation: "slide"});
+      // $('.testimonials-slider').flexslider({ directionNav: false });
       
       // Slide Sizes
       
