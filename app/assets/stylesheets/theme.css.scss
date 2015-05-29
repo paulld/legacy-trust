@@ -29,6 +29,44 @@
   src: font-url('ProximaNova-Bold.otf') format("opentype");
 }
 
+@font-face{
+  font-family: 'Raleway';
+  font-weight:400;
+  font-style:normal;
+  src: font-url('Raleway-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Raleway';
+  font-weight:bold;
+  font-style:normal;
+  src: font-url('Raleway-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Lato';
+  font-weight:400;
+  font-style:normal;
+  src: font-url('Lato-Regular.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Lato';
+  font-weight:400;
+  font-style:italic;
+  src: font-url('Lato-Italic.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Lato';
+  font-weight:bold;
+  font-style:normal;
+  src: font-url('Lato-Bold.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Lato';
+  font-weight:bold;
+  font-style:italic;
+  src: font-url('Lato-BoldItalic.ttf') format('truetype');
+}
+
 // ================
 
 .bg-primary {
