@@ -38,6 +38,22 @@
     margin: 30px 0 0px;
   }
 }
+.show-small {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .show-small {
+    display: block;
+  }
+  .hide-small {
+    display: none;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .footer-container iframe {
+    max-width: 100%;
+  }
+}
 
 
 // Resize slider and sections
