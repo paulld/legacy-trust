@@ -34,6 +34,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       controller: 'ContactUsCtrl'
     }).
 
+    when('/disclaimer', {
+      templateUrl: "<%= asset_path('disclaimer.html') %>",
+      controller: 'DisclaimerCtrl'
+    }).
+
+    when('/privacy-policy', {
+      templateUrl: "<%= asset_path('privacy-policy.html') %>",
+      controller: 'PrivacyPolicyCtrl'
+    }).
+
     when('/login', {
       templateUrl: "<%= asset_path('login.html') %>",
       controller: 'LoginCtrl'

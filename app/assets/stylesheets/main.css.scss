@@ -13,7 +13,31 @@
 .nav-menu {
   padding-top: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .overlay-bar .has-dropdown:after {
+    color: transparent;
+  }
+}
 
+
+// Footer
+
+.footer-contact h1 {
+  margin: 60px 0 30px;
+}
+.contact-map {
+  padding-top: 75px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-map {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-contact h1 {
+    margin: 30px 0 0px;
+  }
+}
 
 
 // Resize slider and sections
@@ -93,3 +117,22 @@ section.duplicatable-content.home-section-two {
     }
   }
 }
+
+
+// Main Style additions
+
+.btn-blue {
+  border-color: #153949;
+  color: #153949;
+}
+.btn-blue:hover {
+  background-color: #153949;
+  color: #fff;
+  border-color: #153949;
+}
+@media only screen and (max-width: 767px) {
+  .home-2-columns .feature-icon-large h5 {
+    text-align: left;
+  }
+}
+
