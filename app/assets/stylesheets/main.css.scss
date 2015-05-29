@@ -22,6 +22,13 @@
 
 // Footer
 
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer.details .sub {
+  margin-top: 28px;
+}
 .footer-contact h1 {
   margin: 60px 0 30px;
 }
@@ -152,3 +159,114 @@ section.duplicatable-content.home-section-two {
   }
 }
 
+.team-1 img {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+.team-title {
+  font-size: 16px;
+}
+
+
+.fiduciary-duty {
+  .pricing-tables {
+    margin-top: 30px;
+  }
+  .pricing-table {
+    padding-bottom: 0;
+    .price {
+      height: 260px;
+      padding: 40px 15px;
+    }
+    .price2 {
+      height: 290px;
+      padding: 40px 15px;
+    }
+  }
+  h5.alt-font {
+    font-size: 14px;
+    line-height: 18px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .fiduciary-duty .pricing-table {
+    .price {
+      height: 308px;
+    }
+    .price2 {
+      height: 338px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .fiduciary-duty {
+    .pricing-tables > .col-md-3 {
+      padding: 0;
+      .pricing-table {
+        margin-bottom: 0;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0!important;
+        .price {
+          height: 248px;
+        }
+        .price2 {
+          height: 248px;
+        }
+      }
+    }
+    .col-md-3:nth-child(odd) .pricing-table {
+      border-right: none;
+    }
+  }  
+}
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .fiduciary-duty {
+    .col-md-3:nth-child(1) .pricing-table,
+    .col-md-3:nth-child(2) .pricing-table {
+      border-bottom: none;
+    }
+    .col-md-3:nth-child(odd) .pricing-table {
+      border-right: none;
+    }
+    .col-md-3:nth-child(1) .pricing-table {
+      border-radius: 25px 0px 0px 0px!important;
+    }
+    .col-md-3:nth-child(2) .pricing-table {
+      border-radius: 0px 25px 0px 0px!important;
+    }
+    .col-md-3:nth-child(3) .pricing-table {
+      border-radius: 0px 0px 0px 25px!important;
+    }
+    .col-md-3:nth-child(4) .pricing-table {
+      border-radius: 0px 0px 25px 0px!important;
+    }
+  }  
+}
+@media only screen and (max-width: 767px) {
+  .fiduciary-duty {
+    .pricing-table {
+      margin: 0 30px;
+      .price {
+        height: auto!important;
+      }
+      .price2 {
+        height: auto!important;
+      }
+    }
+    .col-md-3:nth-child(1) .pricing-table {
+      border-radius: 25px 25px 0px 0px!important;
+    }
+    .col-md-3:nth-child(4) .pricing-table {
+      border-radius: 0px 0px 25px 25px!important;
+    }
+    .col-md-3:nth-child(2) .pricing-table {
+      border-top: none!important;
+    }
+    .col-md-3:nth-child(3) .pricing-table {
+      border-top: none!important;
+      border-bottom: none!important;
+    }
+  }
+}
