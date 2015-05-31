@@ -25,4 +25,5 @@
 //= require lib/jquery.countdown.min
 //= require angular
 //= require angular-route
+//= require nGSmoothScroll/angular-smooth-scroll.min
 //= require_tree ./angular
