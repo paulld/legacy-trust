@@ -25,6 +25,9 @@
 footer {
   padding-top: 40px;
   padding-bottom: 40px;
+  .menu li a {
+    padding-bottom: 10px;
+  }
 }
 footer.details .sub {
   margin-top: 28px;

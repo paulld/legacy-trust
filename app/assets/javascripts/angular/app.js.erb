@@ -10,18 +10,13 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     }).
 
     when('/about-legacy', {
-      templateUrl: "<%= asset_path('about.html') %>",
-      controller: 'AboutCtrl'
+      templateUrl: "<%= asset_path('about-legacy.html') %>",
+      controller: 'AboutLegacyCtrl'
     }).
 
-    when('/personal-trusts', {
-      templateUrl: "<%= asset_path('personal-trusts.html') %>",
-      controller: 'PersonalTrustsCtrl'
-    }).
-
-    when('/corporate-trustee', {
-      templateUrl: "<%= asset_path('corporate-trustee.html') %>",
-      controller: 'CorporateTrusteeCtrl'
+    when('/corporate-services', {
+      templateUrl: "<%= asset_path('corporate-services.html') %>",
+      controller: 'CorporateServicesCtrl'
     }).
 
     when('/specialised-services', {
@@ -59,8 +54,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     });
 
     $locationProvider.html5Mode(true);
-}])
-  .directive('headNav', function() {
+    
+}]).directive('headNav', function() {
     return {
       templateUrl: "<%= asset_path('head_nav.html') %>",
       controller: 'HeadNavCtrl'
@@ -98,8 +93,15 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $('.testimonials-slider').flexslider({ directionNav: false });
 
   };
+}]);
 
-}]).factory('AfterloadOthers', ['$window', function() {
+
+
+// //////////////////////////////////////////////
+
+// NB: FOLLOWING FUNCTIONS AREN'T USED CURRENTLY
+
+app.factory('AfterloadOthers', ['$window', function() {
     // function alignVertical(){
     //   $('.align-vertical').each(function(){
     //     var that = $(this);
