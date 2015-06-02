@@ -8,11 +8,15 @@ class ContactsController < ApplicationController
     @contact.request = request
 
     if @contact.deliver
+      puts ">>>>>>>>>DELIVER"
       Message.create(contact_params)
-      flash.now[:notice] = 'Thank you for your message! I will come back to you as soon as possible'
+      render :status => 202
+      # flash.now[:notice] = 'Thank you for your message. We will come back to you as soon as possible'
     else
-      flash.now[:error] = 'You message could not be sent. Please try again.'
-      render :new
+      puts ">>>>>>>>>NOOOO DELIVER"
+      render :status => 422
+      # flash.now[:error] = 'You message could not be sent. Please try again.'
+      # render :new
     end
   end
 

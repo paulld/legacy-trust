@@ -147,11 +147,11 @@ section.duplicatable-content.home-section-two {
 
 // Main Style additions
 
-.btn-blue {
+.btn-blue, .contact-us .btn-blue {
   border-color: #153949;
   color: #153949;
 }
-.btn-blue:hover {
+.btn-blue:hover, .contact-us .btn-blue:hover {
   background-color: #153949;
   color: #fff;
   border-color: #153949;
@@ -339,4 +339,47 @@ section.duplicatable-content.home-section-two {
       padding-bottom: 70px;
     }
   }
+}
+
+// CONTACT US
+.contact-us {
+  .page-header {
+    padding-bottom: 40px;
+  }
+  .section-white {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-us {
+    form {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.lead-error {
+  color: #d94947;
+}
+.lead-success {
+  color: #58b551;
+}
+
+
+.ng-submitted .ng-invalid-required::-moz-placeholder {
+  color: #d94947;
+}
+.ng-submitted .ng-invalid-required:-ms-input-placeholder {
+  color: #d94947;
+}
+.ng-submitted .ng-invalid-required::-webkit-input-placeholder {
+  color: #d94947;
+}
+.ng-submitted .ng-invalid-required input::-webkit-input-placeholder {
+  color: #d94947;
+}
+
+.ng-submitted .ng-invalid-email {
+  color: #d94947;
 }
