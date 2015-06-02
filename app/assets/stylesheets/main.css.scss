@@ -287,6 +287,9 @@ section.duplicatable-content.home-section-two {
   }
 }
 
+
+// CORPORATE SERVICES
+
 .bullet-list-row {
   margin-top: 15px;
   .bullet-list {
@@ -299,6 +302,25 @@ section.duplicatable-content.home-section-two {
       margin-left: 15px;
       font-size: 15px;
     }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .international-pension-plans img {
+    margin-bottom: 10px;
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bullet-list-row img {
+    max-width: 400px;
+    margin: 10px auto 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .international-pension-plans img,
+  .bullet-list-row img {
+    max-width: 100%;
   }
 }
 
@@ -396,3 +418,12 @@ section.duplicatable-content.home-section-two {
 .ng-submitted .ng-invalid-email {
   color: #d94947;
 }
+
+
+@media only screen and (max-width: 767px) and (min-width: 600px) {
+  .action-banner .background-image {
+    max-height: none;
+    max-width: 100%;
+  }
+}
+
