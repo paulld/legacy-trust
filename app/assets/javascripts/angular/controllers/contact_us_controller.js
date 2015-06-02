@@ -18,11 +18,6 @@ app.controller('ContactUsCtrl', ['$scope', '$http', '$timeout', 'Afterload', fun
       $http.post('/contact', $scope.postData)
         .success(function() {
           // Success message already sent
-          // $scope.sentWithSuccess = true;
-          // $scope.contact.name = '';
-          // $scope.contact.email = '';
-          // $scope.contact.message = '';
-          // $scope.formClass = '';
         })
         .error(function() {
           // Revert Success message if error

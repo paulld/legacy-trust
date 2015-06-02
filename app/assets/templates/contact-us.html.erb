@@ -21,13 +21,13 @@
         
         <div class="col-lg-5 col-lg-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
           <div class="form-wrapper clearfix">
-            <h5>Get in Touch!</h5>
+            <h5 class="text-center">Get in Touch!</h5>
 
-            <p class="lead lead-success" ng-show="sentWithSuccess">Thank you for your message. We will come back to you as soon as possible.</p>
+            <p class="lead lead-success text-center" ng-show="sentWithSuccess">Thank you for your message. We will come back to you as soon as possible.</p>
 
-            <p class="lead lead-error" ng-show="sentWithError">Sorry, something went wrong. Please check your input and submit again.</p>
+            <p class="lead lead-error text-center" ng-show="sentWithError">Sorry, something went wrong. Please check your input and submit again.</p>
             
-            <p class="lead lead-error" ng-show="contactForm.$submitted && contactForm.$invalid && !sentWithSuccess">Some required fields are missing. Please review your input.</p>
+            <p class="lead lead-error text-center" ng-show="contactForm.$submitted && contactForm.$invalid && !sentWithSuccess">Some required fields are missing or incorrect.<br>Please review your input.</p>
 
             <form ng-hide="sentWithSuccess" name="contactForm" class="form-contact email-form" ng-class="formClass" novalidate>
               <div class="inputs-wrapper">
@@ -37,7 +37,9 @@
 
                 <textarea class="form-message validate-required" type="text" placeholder="Message" name="message" ng-model="contact.message" required></textarea>
               </div>
-              <button class="btn btn-primary btn-blue" type="submit" ng-click="postMail(contact)">Send Form</button>
+              <div class="text-center">
+                <button class="btn btn-primary btn-blue" type="submit" ng-click="postMail(contact)">Send Form</button>
+              </div>
 
             </form>
           </div>

@@ -1,10 +1,13 @@
 // Main Menu
 
 .main-menu {
-  margin-top: 40px;
-  text-align: right;
+  margin-top: 30px;
+  text-align: center;
   .subnav {
     text-align: left;
+  }
+  .menu li a {
+    padding-bottom: 30px;
   }
 }
 .top-bar .logo {
@@ -12,13 +15,23 @@
 }
 .nav-menu {
   padding-top: 20px;
+  a img {
+    margin: 0 auto;
+  }
+  .utility-menu {
+    display: block;
+  }
 }
 @media only screen and (max-width: 767px) {
   .overlay-bar .has-dropdown:after {
     color: transparent;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .top-bar .logo {
+    margin-top: -13px;
+  }
+}
 
 // Footer
 
