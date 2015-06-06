@@ -8,6 +8,7 @@
   }
   .menu li a {
     padding-bottom: 30px;
+    font-size: 12px;
   }
 }
 .top-bar .logo {
@@ -25,6 +26,11 @@
 @media only screen and (max-width: 767px) {
   .overlay-bar .has-dropdown:after {
     color: transparent;
+  }
+  .main-menu {
+    .menu li a {
+      padding-bottom: 10px;
+    }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -160,6 +166,10 @@ section.duplicatable-content.home-section-two {
 
 // Main Style additions
 
+.page-header .col-sm-12.pad-top {
+  height: 218px;
+}
+
 .btn-blue, .contact-us .btn-blue {
   border-color: #153949;
   color: #153949;
@@ -168,6 +178,9 @@ section.duplicatable-content.home-section-two {
   background-color: #153949;
   color: #fff;
   border-color: #153949;
+}
+.btn.btn-primary.btn-squarish {
+  border-radius: 12px;
 }
 @media only screen and (max-width: 767px) {
   .home-2-columns .feature-icon-large h5 {
@@ -376,14 +389,21 @@ section.duplicatable-content.home-section-two {
   }
 }
 
+
 // CONTACT US
 .contact-us {
-  .page-header {
-    padding-bottom: 40px;
-  }
   .section-white {
     background-color: #ffffff;
     padding: 50px 0;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  .form-contact .inputs-wrapper {
+    font-size: 16px;
+    .btn {
+      font-size: 14px;
+    }
   }
 }
 @media only screen and (max-width: 767px) {
@@ -426,4 +446,22 @@ section.duplicatable-content.home-section-two {
     max-width: 100%;
   }
 }
+@media only screen and (min-width: 767px) and (max-width: 850px) {
+  .background-image-holder .background-image {
+    max-width: 140%;
+  }
+}
+@media only screen and (min-width: 851px) and (max-width: 950px) {
+  .background-image-holder .background-image {
+    max-width: 130%;
+  }
+}
+@media only screen and (min-width: 951px) and (max-width: 1064px) {
+  .background-image-holder .background-image {
+    max-width: 120%;
+  }
+}
 
+.action-banner .btn-filled {
+  font-size: 14px
+}
