@@ -115,7 +115,31 @@ footer.details .sub {
 section.duplicatable-content.home-section-two {
   padding: 30px 0;
 }
+@media only screen and (min-width: 1400px) {
+  .background-image {
+    width: 100%;
+  }
+}
 
+.feature-icon-large {
+  h5 {
+    text-align: center;
+  }
+  i {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  p {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .feature-icon-large {
+    h5 {
+      height: 38px;
+    }
+  }
+}
 
 @media only screen and (max-width: 767px) {
   .main-menu {
@@ -152,15 +176,15 @@ section.duplicatable-content.home-section-two {
     max-height: 100%;
     max-width: none;
   }
-  .feature-icon-large {
-    h5 {
-      text-align: center;
-    }
-    i {
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
+  // .feature-icon-large {
+  //   h5 {
+  //     text-align: center;
+  //   }
+  //   i {
+  //     margin-right: auto;
+  //     margin-left: auto;
+  //   }
+  // }
 }
 
 
@@ -305,15 +329,30 @@ section.duplicatable-content.home-section-two {
 
 .bullet-list-row {
   margin-top: 15px;
+  list-style-type: none;
   .bullet-list {
-    list-style: initial;
-    margin-left: 15px;
+    list-style: inherit;
+    margin-left: 30px;
     li {
       font-size: 16px;
+      text-indent: -30px;
+      margin-bottom: 5px;
+    }
+    li:before {
+      font-family: 'ElegantIcons';
+      content: '\5a';
+      float: left;
+      width: 30px;
+      font-size: 19px;
     }
     .bullet-2 {
-      margin-left: 15px;
+      margin-left: 25px;
       font-size: 15px;
+      text-indent: -25px;
+    }
+    .bullet-2:before {
+      font-size: 16px;
+      width: 25px;
     }
   }
 }
@@ -325,9 +364,14 @@ section.duplicatable-content.home-section-two {
   }
 }
 @media only screen and (max-width: 767px) {
-  .bullet-list-row img {
-    max-width: 400px;
-    margin: 10px auto 15px;
+  .bullet-list-row {
+    .bullet-list li {
+      font-size: 14px;
+    }
+    img {
+      max-width: 400px;
+      margin: 10px auto 15px;
+    }
   }
 }
 @media only screen and (max-width: 500px) {
@@ -399,17 +443,37 @@ section.duplicatable-content.home-section-two {
   h5 {
     font-size: 20px;
   }
-  .form-contact .inputs-wrapper {
-    font-size: 16px;
-    .btn {
-      font-size: 14px;
+  .form-contact {
+    padding-top: 8px;
+    .inputs-wrapper {
+      font-size: 16px;
+      .btn {
+        font-size: 14px;
+      }
+      .form-message {
+        height: 241px;
+      }
     }
   }
+  .map-wrapper {
+    -webkit-filter: grayscale(100%); 
+            filter: grayscale(100%);
+  }
 }
+@media only screen and (min-width: 1200px) {
+  .form-wrapper, .map-wrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .contact-us {
-    form {
+    .form-contact {
       margin-bottom: 30px;
+      .inputs-wrapper .form-message {
+        height: 150px;
+      }
     }
   }
 }
