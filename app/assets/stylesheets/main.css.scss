@@ -408,6 +408,12 @@ section.duplicatable-content.home-section-two {
     top: 0;
     background-color: #2f2933;
   }
+  .feature-box {
+    height: 398px;
+    .inner {
+      width: 100%;
+    }
+  }
   h3.alt-font {
     font-size: 14px;
     color: #999999;
