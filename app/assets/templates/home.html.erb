@@ -66,16 +66,13 @@
       <div class="row">
         <div class="col-md-6">
           <div class="feature feature-icon-large">
-            <div class="pull-left">
-              <i class="icon icon-linegraph"></i>
-            </div>
             <div class="pull-right">
               <h1>Corporate Services</h1>
-              <h5>Effective Trust Solutions to Safeguard Business Interests</h5>
+              <h5 class="text-left">Effective Trust Solutions to Safeguard Business Interests</h5>
               <p class="lead">
                 Assigning a trustee to be responsible for managing company's assets and affairs can be the most important decision you can make. Legacy offers the extensive knowledge and experience necessary to handle your trust.
               </p>
-              <a href="/corporate-trustee" class="btn btn-primary btn-blue btn-squarish hidden-md hidden-lg">
+              <a href ng-click="goTo('corporate-services', 'page-header', 0)" class="btn btn-primary btn-blue btn-squarish hidden-md hidden-lg">
                 More about our
                 <br class="show-small">
                 Corporate Services
@@ -85,17 +82,14 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="feature feature-icon-large">
-            <div class="pull-left">
-              <i class="icon icon-adjustments"></i>
-            </div>
+          <div class="feature feature-icon-large text-left">
             <div class="pull-right">
               <h1>Specialised Services</h1>
-              <h5>A Personal Trust Can Be As Unique As You Are</h5>
+              <h5 class="text-left">A Personal Trust Can Be As Unique As You Are</h5>
               <p class="lead">
                 Naming a trustee to be responsible for managing your assets and legal affairs is one of the most important decisions you can make. Legacy Trust offers the extensive knowledge and experience necessary to handle your trust.
               </p>
-              <a href="/specialised-services" class="btn btn-primary btn-blue btn-squarish hidden-md hidden-lg">
+              <a href ng-click="goTo('specialised-services', 'page-header', 0)" class="btn btn-primary btn-blue btn-squarish hidden-md hidden-lg">
                 More about our
                 <br class="show-small">
                 Specialised Services
@@ -109,14 +103,14 @@
         <div class="col-md-6">
           <div class="feature feature-icon-large">
             <div class="pull-right">
-              <a href="/corporate-trustee" class="btn btn-primary btn-blue btn-squarish">More about our Corporate Services ›</a>
+              <a href ng-click="goTo('corporate-services', 'page-header', 0)" class="btn btn-primary btn-blue btn-squarish">More about our Corporate Services ›</a>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="feature feature-icon-large">
             <div class="pull-right">
-              <a href="/specialised-services" class="btn btn-primary btn-blue btn-squarish">More about our Specialised Services ›</a>
+              <a href ng-click="goTo('specialised-services', 'page-header', 0)" class="btn btn-primary btn-blue btn-squarish">More about our Specialised Services ›</a>
             </div>
           </div>
         </div>
@@ -146,13 +140,11 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+        <div class="col-sm-10 col-sm-offset-1 text-center">
           <h1 class="text-white">Contact one of our skilled professionals to find the right trust product for you.
           </h1>
           <h2 class="text-white">Contact us at (+852) 2617-9177 </h2>
           <a href ng-click="goTo('contact-us', 'page-header', 0)" class="btn btn-primary btn-white btn-filled">Schedule a Call</a>
-          <!-- <a href="#" class="btn btn-primary btn-white">Get Started Online!</a> -->
-          <!-- <a href="#" class="btn btn-primary btn-white btn-filled">Request a callback</a> -->
         </div>
       </div>
     </div>

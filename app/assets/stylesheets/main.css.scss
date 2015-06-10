@@ -122,9 +122,6 @@ section.duplicatable-content.home-section-two {
 }
 
 .feature-icon-large {
-  h5 {
-    text-align: center;
-  }
   i {
     margin-right: auto;
     margin-left: auto;
@@ -352,6 +349,9 @@ section.duplicatable-content.home-section-two {
 .bullet-list-row {
   margin-top: 15px;
   list-style-type: none;
+  & > div {
+    margin-top: 15px;
+  }
   .bullet-list {
     list-style: inherit;
     margin-left: 30px;
@@ -369,6 +369,9 @@ section.duplicatable-content.home-section-two {
       font-size: 19px;
       color: #153949;
     }
+    .lead {
+      margin: 10px 0 10px -28px;
+    }
     .bullet-2 {
       margin-left: 25px;
       font-size: 15px;
@@ -381,27 +384,14 @@ section.duplicatable-content.home-section-two {
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .international-pension-plans img {
-    margin-bottom: 10px;
-    max-width: 400px;
-  }
+.international-pension-plans img {
+  margin-bottom: 25px;
 }
 @media only screen and (max-width: 767px) {
   .bullet-list-row {
     .bullet-list li {
       font-size: 14px;
     }
-    img {
-      max-width: 400px;
-      margin: 10px auto 15px;
-    }
-  }
-}
-@media only screen and (max-width: 500px) {
-  .international-pension-plans img,
-  .bullet-list-row img {
-    max-width: 100%;
   }
 }
 
@@ -433,7 +423,8 @@ section.duplicatable-content.home-section-two {
     background-color: #2f2933;
   }
   .feature-box {
-    height: 398px;
+    height: 420px;
+    padding: 64px 80px;
     .inner {
       width: 100%;
     }
@@ -444,8 +435,18 @@ section.duplicatable-content.home-section-two {
     margin-bottom: 15px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1096px) {
+  .family-trusts {
+    .feature-box {
+      height: 450px;
+    }
+  }
+}
 @media only screen and (max-width: 992px) {
   .family-trusts {
+    .feature-box {
+      height: auto;
+    }
     .col-md-5:nth-of-type(2) h1 {
       margin: 35px 0 25px;
     }
@@ -533,6 +534,15 @@ section.duplicatable-content.home-section-two {
   color: #d94947;
 }
 
+.action-banner {
+  h1 {
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .h2 {
+    font-size: 23px;
+  }
+}
 
 @media only screen and (max-width: 767px) and (min-width: 600px) {
   .action-banner .background-image {
