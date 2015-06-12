@@ -121,6 +121,15 @@ section.duplicatable-content.home-section-two {
   }
 }
 
+.advantages-of-trusts {
+  .col-md-6:nth-child(2n+1) .feature {
+    padding-right: 15px;
+  }
+  .col-md-6:nth-child(2n) .feature {
+    padding-left: 15px;
+  }
+}
+
 .feature-icon-large {
   i {
     margin-right: auto;
